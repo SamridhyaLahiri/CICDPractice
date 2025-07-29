@@ -11,6 +11,7 @@ name: Java CI with Maven
 on:
   push:
     branches: ["CalculatorUITest_skipIfHeadless"]
+    
   pull_request:
     branches: ["CalculatorUITest_skipIfHeadless"]
 
