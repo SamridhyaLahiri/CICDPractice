@@ -61,7 +61,8 @@ public class CalculatorUI {
 
     public CalculatorUI() {
         themesMap = ThemeLoader.loadThemes();
-
+        // Skip test if running in headless mode
+        Assume.assumeFalse(GraphicsEnvironment.isHeadless());
         window = new JFrame(APPLICATION_TITLE);
         window.setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
         window.setLocationRelativeTo(null);
