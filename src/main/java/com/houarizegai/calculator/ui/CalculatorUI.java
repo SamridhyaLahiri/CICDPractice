@@ -10,7 +10,9 @@ import java.util.Map;
 import java.util.regex.Pattern;
 import java.awt.Color;
 import javax.swing.*;
-import org.junit.jupiter.api;
+//Code added by me below
+import static org.junit.jupiter.api.Assumptions.assumeFalse;
+import java.awt.GraphicsEnvironment;
 
 import static com.houarizegai.calculator.util.ColorUtil.hex2Color;
 
