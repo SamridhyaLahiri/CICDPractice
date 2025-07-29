@@ -18,7 +18,7 @@ class CalculatorUITest {
     @BeforeEach
     void setUp() {
         // Skip test if running in headless mode
-        Assume.assumeFalse(GraphicsEnvironment.isHeadless());
+        assumeFalse(GraphicsEnvironment.isHeadless());
         calculatorUI = new CalculatorUI();
     }
 
@@ -26,7 +26,7 @@ class CalculatorUITest {
     @CsvSource({"3,5,+,8", "2,8,-,-6", "44.5,10,*,445", "320,5,/,64", "3,5,%,3", "5,3,^,125"})
     void testCalculation(double firstNumber, double secondNumber, char operator, double expectedResult) {
         // Skip test if running in headless mode
-        Assume.assumeFalse(GraphicsEnvironment.isHeadless());
+        assumeFalse(GraphicsEnvironment.isHeadless());
         assertEquals(expectedResult, calculatorUI.calculate(firstNumber, secondNumber, operator));
     }
 }
