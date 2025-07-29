@@ -10,10 +10,10 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: ["CalculatorUITest_skipIfHeadless"]
+    branches: ["CICDPractice_branch_Maven"]
     
   pull_request:
-    branches: ["CalculatorUITest_skipIfHeadless"]
+    branches: ["CICDPractice_branch_Maven"]
 
 jobs:
   build:
