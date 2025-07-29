@@ -10,9 +10,7 @@ import java.util.Map;
 import java.util.regex.Pattern;
 import java.awt.Color;
 import javax.swing.*;
-//Code added by me below
-import static org.junit.jupiter.api.Assumptions.assumeFalse;
-import java.awt.GraphicsEnvironment;
+
 
 import static com.houarizegai.calculator.util.ColorUtil.hex2Color;
 
@@ -64,8 +62,7 @@ public class CalculatorUI {
 
     public CalculatorUI() {
         themesMap = ThemeLoader.loadThemes();
-        // Skip test if running in headless mode
-        Assume.assumeFalse(GraphicsEnvironment.isHeadless());
+       
         window = new JFrame(APPLICATION_TITLE);
         window.setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
         window.setLocationRelativeTo(null);
