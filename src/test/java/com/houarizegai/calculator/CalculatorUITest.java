@@ -13,6 +13,9 @@ class CalculatorUITest {
 
     @BeforeEach
     void setUp() {
+        // Skip test if running in headless mode
+        Assume.assumeFalse(GraphicsEnvironment.isHeadless());
+        
         calculatorUI = new CalculatorUI();
     }
 
