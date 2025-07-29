@@ -6,6 +6,10 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+//Below code added by me
+import static org.junit.jupiter.api.Assumptions.assumeFalse;
+import java.awt.GraphicsEnvironment;
+
 
 class CalculatorUITest {
 
