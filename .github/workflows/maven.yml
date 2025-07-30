@@ -57,7 +57,7 @@ jobs:
       with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/CICDPractice:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/cicdpractice:latest
         
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
