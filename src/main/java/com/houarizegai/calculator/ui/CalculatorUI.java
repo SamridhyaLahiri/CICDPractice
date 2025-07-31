@@ -11,6 +11,7 @@ import java.util.regex.Pattern;
 import java.awt.Color;
 import javax.swing.*;
 
+
 import static com.houarizegai.calculator.util.ColorUtil.hex2Color;
 
 public class CalculatorUI {
@@ -61,7 +62,7 @@ public class CalculatorUI {
 
     public CalculatorUI() {
         themesMap = ThemeLoader.loadThemes();
-
+       
         window = new JFrame(APPLICATION_TITLE);
         window.setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
         window.setLocationRelativeTo(null);
