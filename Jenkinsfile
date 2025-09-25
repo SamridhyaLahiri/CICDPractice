@@ -32,7 +32,7 @@ pipeline{
     stage("deploy"){
       steps{
         echo "Inside deploy stage, executing steps"
-        echo "Deploying with ${SERVER_CREDENTIALS}"
+        echo "Deploying with ${SERVER_CREDENTIALS} and version ${params.VERSION}"
       }
     }
   }
