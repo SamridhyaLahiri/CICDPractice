@@ -8,7 +8,7 @@ WORKDIR /app
 COPY target/Calculator-1.0-SNAPSHOT.jar app.jar
 
 # Expose port 8080 (optional; only needed if your app opens a server)
-EXPOSE 8080
+EXPOSE 9000
 
 # Command to run the JAR
 ENTRYPOINT ["java", "-jar", "app.jar"]
